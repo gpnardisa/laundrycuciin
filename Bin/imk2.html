@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+        <form>
+        <label for="judul">---Form Pemesanan Makanan---</label><br><br>
+        <label for="lname">Nama</label>
+        <input type="text" id="lname" name="lname"\><br><br>
+
+        <label>List Makanan : </label><br><br>
+
+        <input type="radio" id="rendang" name="makanan" value="rendang">
+        <label for="rendang">Nasi Rendang</label><br>
+        <input type="radio" id="uduk" name="makanan" value="uduk">
+        <label for="uduk">Nasi Uduk</label><br>
+        <input type="radio" id="remes" name="makanan" value="rames">
+        <label for="rames">Nasi Remes</label><br><br>
+
+       
+   
+        <button onclick="myFunction()">Submit</button>
+        <input type="reset" value="Reset">
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+        var txt;
+        if (confirm("Apakah Pesanan Anda Sudah Benar?")) {
+        window.alert("Terima Kasih, SIlahkan Tunggu!");
+        } else {
+        window.alert("Kamu Menekan Batal, Silahkan Isi Kembali.");
+        }
+        document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+
+       
+
+        </form> 
+    </head>
+     
+</html>

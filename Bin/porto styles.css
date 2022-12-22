@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #4D648D;
+
+}
+
+
+.nav-container {
+    
+    background: #1E1E26;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    cursor: pointer;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+
+    color: #ffffff;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li a {
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+.home {
+    position: absolute;
+    width: 1441px;
+    height: 700px;
+    left: -93px;
+    top: 158px;
+
+    background: #283756;
+    border-radius: 90px;
+}
+
+h1 {
+    max-width: 733px;
+    position: absolute;
+    width: 65px;
+    height: 59px;
+    padding: 0px 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #FFFFFF;
+}
+
+h2 {
+    position: absolute;
+    max-width: 800px;
+    width: 780px;
+    height: 44px;
+    left: 239px;
+    top: 195px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color : #FFFFFF
+}
+
+p {
+    max-width: 733px;
+    position: absolute;
+width: 733px;
+height: 56px;
+left: 239px;
+top: 300px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color : #FFFFFF
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.image-profile {
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    left: 1000px;
+    top: 42px;
+
+    border-radius: 402.332px;
+}
+
+
+
+
+.nav-bot-container{
+    margin-top: 1000px;
+    background: #1E1E26;
+    box-sizing: border-box;
+}
+
+.logo-bot {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+
+    color: #ffffff;
+}

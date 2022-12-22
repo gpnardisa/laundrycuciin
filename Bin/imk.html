@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>imk</title>
+        <script type="text/javascript">
+        
+        function kirimpesan(){
+            var table=document.getElementById("table1");
+            var pesan=document.getElementById("txtcomment").value;
+            var email=document.getElementById("txtemail").value;
+            var web=document.getElementById("txtwebsite").value;
+            var Tanggal = Date();
+
+            var row=table.insertrow(0);
+            var cell=row.insertcell(0);
+
+            if (pesan!="" & email!="" & web=""){
+                cell.innerHTML=email+"<br><a href=http://"+web+"</a><br>"+Tanggal+"<br>"+pesan;
+                document.getElementById("txtcomment").value="";
+                document.getElementById("txtemail").value="";
+                document.getElementById("txtwebsite").value="";
+            }
+            else{
+                alert("form belum lengkap");
+            }
+        }
+        </script>
+    </head>
+    <body bgcolor="#0000ff">
+        <center>
+            <form>
+                <table width="500" height="50" border="1" bgcolor="#00ccff" id="table1"
+                <tr>
+                    <th width="157">
+                        E-mail<br/>
+                        <input name="txtemail" type="text" id="txtemail"/>
+                        <br> website <br/>
+                        <input name="txtwebsite" type="text" id="txtwebsite"/>
+                        <br> pesan <br/>
+                        <textarea name="txtcomment" type="text" id="txtcomment"></textarea><br/>
+                        <input name="tombol" type="button" id="tombol" value="submit" onClick="kirimpesan()"/>
+                    </th>
+                </tr>
+            </form>
+        </center>
+    </body>
+</html>

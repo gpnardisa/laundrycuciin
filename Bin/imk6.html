@@ -1,0 +1,72 @@
+<html>
+    <head>
+
+        <form>
+        <label for="judul">---Pendataan---</label><br><br>
+        <label for="lname">NPM : </label>
+        <input type="text" id="lnpm" name="lnpm"\><br><br>
+        <label for="lname">Nama Lengkap : </label>
+        <input type="text" id="lname" name="lname"\><br><br>
+
+        <label>Jenis Kelamin : </label>
+
+        <input type="radio" id="men" name="men" value="men">
+        <label for="men">Pria  </label>
+        <input type="radio" id="woman" name="woman" value="woman">
+        <label for="woman">Wanita</label><br><br>
+
+        <label for="jobs">Pekerjaan : </label>
+
+        <select name="jobs" id="jobs">
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="buruh">Buruh</option>
+        <option value="PNS">PNS</option>
+        <option value="Pegawai Swasta">Pegawai Swasta</option>
+        <option value="Wirausaha">Wirausaha</option>
+        </select><br><br>
+
+        <label for="hobi">Hobby : </label>
+        <input type="checkbox" id="game" name="game" value="hobi">
+        <label for="game"> Bermain Game </label>
+        <input type="checkbox" id="edit" name="edit" value="hobi">
+        <label for="edit"> Editing Video </label>
+        <input type="checkbox" id="story" name="story" value="hobi">
+        <label for="story"> Membuat Cerita </label>
+        <input type="checkbox" id="film" name="film" value="hobi">
+        <label for="film"> Menonton FIlm </label>
+        <input type="checkbox" id="else" name="else" value="hobi">
+        <label for="else"> yang lain... </label><br><br>
+
+        <label for="processor">Processor yang dipakai : </label>
+        <select name="processor" id="processor">
+        <option value="core2">Intel Core 2</option>
+        <option value="i3">Intel Core i3</option>
+        <option value="i5">Intel Core i5</option>
+        <option value="i7">Intel Core i7</option>
+        <option value="i9">Intel Core i9</option>
+        </select><br><br>
+
+       
+   
+        <button onclick="myFunction()">Kirim</button>
+        <input type="reset" value="Reset">
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+        var txt;
+        if (confirm("Apakah Data Anda Sudah Benar?")) {
+        window.alert("Terima Kasih karena sudah meluangkan waktunya untuk mengisi form ini, Pendataan Berhasil!");
+        } else {
+        window.alert("Kamu Menekan Batal, Silahkan Isi Kembali.");
+        }
+        document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+
+       
+
+        </form> 
+    </head>
+     
+</html>
